@@ -1,0 +1,12 @@
+body
+{
+    background-color:rgb(152, 236, 146);
+}
+main{
+    width:95%;
+    height:auto;
+    margin-top: 10px;
+    float:left;
+    background-color:white;
+    border-radius:15px;
+}

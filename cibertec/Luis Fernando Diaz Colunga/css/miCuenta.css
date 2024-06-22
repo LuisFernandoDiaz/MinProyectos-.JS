@@ -1,0 +1,48 @@
+
+body{
+background-position: 0% 0%;/*Con las palabras clave center, bottom, right, left, top puedes establecer la posición del fondo*/
+background-repeat: no-repeat;/*La imagen de fondo solo aparecerá una vez.*/
+background-size: cover;/*Gracias a establecer el valor en cover nos aseguramos de que ocupe todo el espacio disponible dentro del elemento.*/
+
+/*background-attachment: fixed;La imagen no se desplazará con la página y permanecerá fija en su contenedor y permanecerá posicionada según la ventana gráfica, así que es probable que solo sea visible una parte de esta.*/
+
+}
+div{
+    background-color: rgb(255, 255, 255);  
+    
+  }
+#Box{
+    text-align: center;
+    width: 300px;
+    /*float: left;*/
+    border: 5px solid rgb(229, 229, 229);
+    border-radius: 15px;
+    padding: /*arriba*/10px /*derecha*/30px /*abajo*/20px /*izquierda*/0px;
+    margin-top: 20px;/*el margen de arriba*/
+}
+
+hr{
+    margin: 0px 5px 0px 25px;
+}
+
+.texBox{
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+}
+
+.entrarBox{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+#mensaje{
+    text-align: center;
+    width: 180px;
+    /*float: left;*/
+    border: 3px solid rgb(155, 155, 155);
+    border-radius: 15px;
+    padding: /*arriba*/10px /*derecha*/10px /*abajo*/10px /*izquierda*/0px;
+    margin-top: 20px;/*el margen de arriba*/
+}
