@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<h1>Año mundial de la FIFA</h1>
+<!--estamos nombrando palabras clave de atajos "var"-->
+<!--estamos nombrando palabras clave de atajos "FUNCTION"-->
+
+
+<script>
+	//estamos usando el codigo de "function" para ayudarnos en los atajos de document.write
+	
+	
+	function saltarLinea(){
+		document.write("<br> <br> <br>");
+	
+	}
+
+
+	function imprimir(frase){
+		document.write(frase);
+		saltarLinea();
+
+	}
+
+
+
+	//aqui tocaremos el tema de "while" que te ayuda repetir los temas que lleve dentro de las llaves las veces que le indiques(puedes agregar formulas matematicas y codigos script).
+
+
+	var anhoMundial = 1930;
+	var limite = parseInt(prompt("Ingrese el año limite para calcular."))
+
+	while ( anhoMundial < limite) {
+		
+		imprimir("Hubo mundial de la fifa en el año " + anhoMundial);
+		anhoMundial = anhoMundial + 4;
+	}
+	imprimir("fin")
+
+	
+</script>
+
+

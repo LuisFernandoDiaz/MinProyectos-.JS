@@ -1,0 +1,60 @@
+<meta charset="UTF-8">
+
+<h1>programa de calculo IMC</h1>
+<!--estamos nombrando palabras clave de atajos "var"-->
+<!--estamos nombrando palabras clave de atajos "FUNCTION"-->
+
+
+<script>
+	//estamos usando el codigo de "function" para ayudarnos en los atajos de document.write
+	
+	
+	function saltarLinea(){
+		document.write("<br> <br> <br>")
+	
+	}
+
+
+	function imprimir(frase){
+		document.write(frase)
+		saltarLinea()
+
+	}
+
+
+	function calcularImc(peso,altura){
+
+		return (peso / (altura * altura ));
+		
+	}
+
+	nombre = prompt( " dime tu Nombre")
+	infoPeso = prompt(nombre+ " dime tu peso")
+	infoAltura = prompt(nombre + " dime tu altura")
+	imcCalculado = Math.round(calcularImc(infoPeso,infoAltura))//Math.round()=sirve para redondear numeros.
+
+	imprimir(nombre + " el IMC que muestras es: " + imcCalculado )
+
+
+
+
+	if (imcCalculado < 18.5) {
+		imprimir("IMC abajo de lo recomendado");
+		}
+ 
+	if (imcCalculado >= 18.5 && imcCalculado <25 ) {
+		imprimir("IMC en Intervalo Normal");
+	}
+
+	if (imcCalculado >= 25 && imcCalculado <30) {
+		imprimir("IMC en Sobrepeso");
+	}
+
+	if (imcCalculado >= 30) {
+		imprimir("IMC considerado como obesidad");
+		}
+
+	
+</script>
+
+

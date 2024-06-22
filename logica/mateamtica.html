@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br> <br> <br>");
+    
+    }
+
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+
+    }
+
+
+    var numero = 1
+    var num = prompt("ingrese el numero de multiplicar aqui")
+    
+
+    //"while" sirve para repetir los codigos ingresados , <,>,= se usan para distinguir la variable al numero de veces pro repetir 
+    while (numero <= 10){
+
+         imprimir(num +" por " + numero +" es = " + num * numero );
+         numero = numero + 1;
+
+        }
+
+
+
+
+    //"for" mis ma funcion que while, con la diferencia del orden (primer nombrar la variable, segundo las cantidades por hacer, tercero las respuesta por salir en las cantidades propuestas)
+    
+
+    for (var numero = 1 ; numero <= 10; numero = numero + 1){
+        imprimir(1 * numero);
+    }   
+
+   
+
+
+
+    
+    
+    
+
+
+
+    
+
+   
+
+</script>

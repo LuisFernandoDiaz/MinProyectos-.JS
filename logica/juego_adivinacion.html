@@ -1,0 +1,78 @@
+<meta charset="UTF-8">
+
+<h1>Juego de adivinacion</h1>
+<!--estamos nombrando palabras clave de atajos "var"-->
+<!--estamos nombrando palabras clave de atajos "FUNCTION"-->
+
+
+<script>
+	//estamos usando el codigo de "function" para ayudarnos en los atajos de document.write
+	
+	
+	function saltarLinea(){
+		document.write("<br> <br> <br>")
+	
+	}
+
+
+	function imprimir(frase){
+		document.write(frase)
+		saltarLinea()
+
+	}
+
+
+	//Repetir tareas y actividades con iteraciones while.
+	//Repetir tareas y actividades con iteraciones for.
+	//Interrumpir iteraciones con break.
+	//Realizar iteraciones anidadas, un loop dentro de otro.
+
+
+
+
+
+
+
+	var numeroPensado = Math.round(Math.random()*10);//Math.round(sirve para redondear numeros)Math.random(sirve para sacar numeros a lazar)
+
+	var intentos = 3;
+	var contador = 1;
+
+
+	while ( contador<=intentos){
+
+
+		var numeroLanzado = parseInt(prompt("Ingrese un numero de 0-10"));
+
+		if(numeroPensado == numeroLanzado) {
+			alert("Usted acerto, en el intento " + contador + " el numero pensado era "+ numeroPensado);
+			break;
+
+		}
+
+		if(numeroPensado != numeroLanzado) {
+			alert("Usted erró, en el intento " + contador +", el numero pensado era " + numeroPensado);
+		}
+
+		contador++;
+
+	}
+
+
+	if(numeroPensado == numeroLanzado) {
+		imprimir("Usted acerto,  el numero pensado era "+ numeroPensado);
+			
+	}
+
+	else{
+		imprimir("Usted erró, el numero pensado era " + numeroPensado);
+	}
+
+
+	imprimir("fin")
+
+
+	
+</script>
+
+

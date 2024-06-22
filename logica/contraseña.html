@@ -1,0 +1,88 @@
+<meta charset="UTF-8">
+
+<h1>Juego de adivinacion</h1>
+<!--estamos nombrando palabras clave de atajos "var"-->
+<!--estamos nombrando palabras clave de atajos "FUNCTION"-->
+
+
+<script>
+	//estamos usando el codigo de "function" para ayudarnos en los atajos de document.write
+	
+	
+	function saltarLinea(){
+		document.write("<br> <br> <br>");
+	
+	}
+
+
+	function imprimir(frase){
+		document.write(frase);
+		saltarLinea();
+
+	}
+
+	//Repetir tareas y actividades con iteraciones while.
+	//Repetir tareas y actividades con iteraciones for.
+	//Interrumpir iteraciones con break.
+	//Realizar iteraciones anidadas, un loop dentro de otro.
+
+	
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    
+
+    var intentos = 3;
+    var contador = 1;
+
+    while(contador <= intentos){
+
+    	var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+   		var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+
+    	
+	 	if( inicioDeSesionRegistrado == inicioDeSesionIngresado && 	contrasenhaRegistrada == contrasenhaIngresada ) {
+
+		   alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+		   break;
+
+	 	} else {
+
+		    if (contador == 3) {
+                alert("Agotaste el número permitido de intentos!");
+            } else {
+                alert("Inicio de sesión inválido. Favor intente de nuevo");
+            }
+
+		}
+
+	    contador++;
+	}
+
+
+
+
+
+	if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+
+	    imprimir("Bienvenido al sistema " + inicioDeSesionIngresado);
+
+	} else {
+	    imprimir("inicio de sesión inválido. Favor intente de nuevo");
+
+	}
+
+
+
+	saltarLinea();
+
+
+	imprimir("fin");
+
+
+	
+</script>
+
+
